@@ -1,0 +1,71 @@
+body{
+  box-sizing: border-box;
+}
+.img{
+background-image: url(../img/Flex-top.png);
+background-size: 100vw;
+height: 100vh;
+background-repeat: no-repeat;
+}
+.top-menu{
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  background-color:rgb(61, 61, 61) ;
+  color: aliceblue;
+ align-items: baseline;
+ padding: 10px 0;
+ flex-wrap: wrap;
+
+}
+.rio{
+  font-size: 30px;
+}
+.item{
+  display: flex;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0 30px;
+}
+.items{
+  padding-left: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+}
+.btn{
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: rgb(36, 89, 124);
+  color: rgba(253, 122, 0, 0.993);
+  transition: background-color 0.5s ease ;
+}
+.sub-item{
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  padding: 10px 10px;
+}
+.sub-items{
+padding:5px 10px ;
+cursor: pointer;
+opacity: 0;
+display: none;
+}
+.items:hover .sub-items{
+  opacity: 1;
+  background-color: rgb(56, 56, 56);
+  transition:opacity 1s;
+  display: block;
+}
+.sub-items:hover  {
+  background-color: rgb(73, 71, 71);
+  border: 2px solid rgb(246, 125, 45);
+  }
